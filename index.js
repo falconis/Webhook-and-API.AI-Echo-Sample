@@ -21,7 +21,7 @@ restService.post("/echo", function(req, res) {
       ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
   return res.json({
-    "fulfillmentTest": speech,
+    "fulfillmentTest": " ",
     "fulfillmentMessages": [{"text": {"text": [speech]}}],
     "source":""
   });
